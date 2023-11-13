@@ -1,0 +1,110 @@
+/* Reset styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #e7e7e7; /* Light grey background */
+}
+
+/* Container for the whole CV */
+.cv-container {
+  max-width: 800px; /* Adjust as per your layout width */
+  margin: 20px auto; /* Centers the container with margin on the top and bottom */
+  background-color: #fff; /* White background for the CV */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  padding: 20px;
+  display: flex;
+  flex-direction: column; /* Stack sections vertically */
+}
+
+/* Header styles */
+.cv-header {
+  text-align: center; /* Center the header content */
+  padding-bottom: 20px;
+}
+
+.cv-header h1 {
+  font-size: 28px; /* Large font size for the name */
+  color: #000;
+  margin-bottom: 5px;
+}
+
+.cv-header h2 {
+  font-size: 22px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Section styles */
+section {
+  margin-bottom: 20px;
+}
+
+section h2 {
+  font-size: 20px;
+  border-bottom: 2px solid #000;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+  color: #000;
+}
+
+/* Contact details styles */
+.contact-details p {
+  margin-bottom: 10px;
+}
+
+/* Professional profile styles */
+.professional-profile p {
+  text-align: justify;
+}
+
+/* Skills and other lists */
+.skills p,
+.academic-background p,
+.career-history .job p {
+  margin-bottom: 10px;
+}
+
+/* Career history job title styles */
+.career-history .job h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+/* Company and date styles */
+.career-history .job p:first-child {
+  font-weight: bold;
+}
+
+/* Link styles */
+a {
+  color: #0000ee;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive layout adjustments */
+@media (max-width: 768px) {
+  .cv-container {
+    width: auto; /* Full width on smaller screens */
+    margin: 20px;
+  }
+
+  .cv-header h1 {
+    font-size: 24px; /* Slightly smaller font size for the name on smaller screens */
+  }
+
+  .cv-header h2 {
+    font-size: 18px;
+  }
+}
